@@ -21,9 +21,5 @@ And have GPT find you the answer
 
 ## Roadmap
 
-- Set API Key
-- Show current webpage content
-- Summarize
-- Chat about content
-- Persist ?
-- Count tokens
+- Persist popup content ? (not sure if it should be done)
+- Count tokens using tiktoken API (not ported to JS yet)
