@@ -18,6 +18,11 @@ And have GPT find you the answer
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-4.png"  width="300">
 
+## Getting started
+
+`yarn build`
+
+then install the unpacked extension from `dist` folder in Chrome ([tutorial](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension)) or Firefox ([tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing)).
 
 ## Roadmap
 
