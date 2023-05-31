@@ -24,7 +24,7 @@ And have GPT find you the answer
 - Persist popup content ? (not sure if it should be done)
 - Count tokens using tiktoken API (not ported to JS yet)
 
-# Contributing
+## Contributing
 
 Contributions are welcomed. Feel free to open an issue or a PR. More info in [CONTRIBUTING.md](./CONTRIBUTING.md).
 
