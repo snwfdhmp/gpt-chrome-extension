@@ -23,3 +23,15 @@ And have GPT find you the answer
 
 - Persist popup content ? (not sure if it should be done)
 - Count tokens using tiktoken API (not ported to JS yet)
+
+# Contributing
+
+Looking for contributors to help me build this extension. Feel free to open an issue or a PR. More info in [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+# License
+
+[CreativeCommons NC BY SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+# Support me
+
+If you like this project, consider [buying me a coffee](https://www.buymeacoffee.com/snwfdhmp) or [sponsoring me on GitHub](https://github.com/sponsors/snwfdhmp)
