@@ -20,9 +20,9 @@ And have GPT find you the answer
 
 ## Getting started
 
-`yarn build`
+Build the project: `yarn build`
 
-then install the unpacked extension from `dist` folder in Chrome ([tutorial](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension)) or Firefox ([tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing)).
+Then install the unpacked extension from `dist` folder in Chrome ([tutorial](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension)) or Firefox ([tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing)).
 
 ## Roadmap
 
