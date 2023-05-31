@@ -28,6 +28,6 @@ And have GPT find you the answer
 
 Contributions are welcomed. Feel free to open an issue or a PR. More info in [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-# Support me
+## Support the project
 
 If you like this project, consider [buying me a coffee](https://www.buymeacoffee.com/snwfdhmp) or [sponsoring me on GitHub](https://github.com/sponsors/snwfdhmp)
