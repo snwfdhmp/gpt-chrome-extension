@@ -12,7 +12,7 @@ export const ApiKey = ({ apiKey, setApiKey }) => {
   }
 
   // match again openai api key format
-  const apiKeyIsValid = apiKey.match(/^sk-[a-zA-Z0-9]{48}$/)
+  const apiKeyIsValid = apiKey ? apiKey.match(/^sk-[a-zA-Z0-9]{48}$/) : false
 
   return (
     <span style={{ color: "#888", fontSize: "0.9em" }}>
