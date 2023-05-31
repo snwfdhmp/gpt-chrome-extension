@@ -26,11 +26,7 @@ And have GPT find you the answer
 
 # Contributing
 
-Looking for contributors to help me build this extension. Feel free to open an issue or a PR. More info in [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-# License
-
-[CreativeCommons NC BY SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+Contributions are welcomed. Feel free to open an issue or a PR. More info in [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 # Support me
 
