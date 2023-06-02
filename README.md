@@ -2,19 +2,19 @@
 
 ## Example
 
-The content of the page is parsed automatically and cleaned using Mozilla Reader.
+Content parsed automatically (thanks to [Mozilla Readability library](https://github.com/mozilla/readability))
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-1.png"  width="300">
 
-You can request a summary of the content
+Summarize
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-2.png"  width="300">
 
-Or ask any question about the content
+Ask questions
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-3.png"  width="300">
 
-And have GPT find you the answer
+Find what you want
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-4.png"  width="300">
 
