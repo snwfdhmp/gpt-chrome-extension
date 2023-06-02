@@ -10,11 +10,11 @@ Summarize
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-2.png"  width="300">
 
-Ask questions
+Ask questions about content
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-3.png"  width="300">
 
-Find what you want
+Get the answer
 
 <img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-4.png"  width="300">
 
