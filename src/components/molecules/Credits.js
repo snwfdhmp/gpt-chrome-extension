@@ -12,7 +12,13 @@ export const Credits = ({ style }) => {
       <a href="https://github.com/snwfdhmp" style={{ color: "#444" }}>
         snwfdhmp
       </a>
-      , free and open source
+      , free and{" "}
+      <a
+        href="https://github.com/snwfdhmp/gpt-chrome-extension"
+        style={{ color: "inherit" }}
+      >
+        open source
+      </a>
     </span>
   )
 }
