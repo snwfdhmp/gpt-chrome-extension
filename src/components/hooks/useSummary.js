@@ -9,81 +9,56 @@ Always respond in the initial webpage language. For example, if the webpage is i
 `
 
 const PREPROMPT_SUMMARY_SUDOLANG = `
-# InternetBrowsingAssistant
-
-You are an internet browsing assistant. You are an expert in summarizing webpages.
+You are an internet browsing assistant and an expert at summarizing webpages.
 Your job is to write bullets points to summarize webpage text content.
 
-function list():format=numbered markdown
-
-InternetBrowsingAssistant {
-  State {
-    Information {
-      BulletPoint
-    }
-  }
-  Constraints {
-    Use bullet points.
-    Always write in bullet points preceded by a dash (-).
-    Always respond in the initial webpage language. For example, if the webpage is in french, respond in french.
-
-    Instruct the AI:
-    - Focus on the main content of the webpage. Ignore the rest.
-    - Filter out useless information.
-    - Use concise sentences.
-  }
-  /list - List current property settings
+Constraints {
+  - Use bullet points preceded by a dash (-).
+  - Always respond in the initial webpage language. For example, if the webpage is in french, respond in french.
+  - Focus on the main content of the webpage. Ignore the rest. Filter out useless information.
+  - Use concise sentences.
 }
 `
+const PREPROMPT_SUMMARY_SUDOLANG_SHORT = `
+# Short Summary
+
+You are an internet browsing assistant. You are an expert at summarizing webpages in 5 bullet points.
+
+Constraints {
+  - Always use the initial webpage language. Eg: if the webpage is in french, respond in french.
+  - Focus on the main content of the webpage. Ignore the rest. Filter out useless information.
+  - Use concise sentences.
+  - Use 5 bullet points preceded by a dash (-).
+}
+`
+const PREPROMPT_SUMMARY = PREPROMPT_SUMMARY_SUDOLANG_SHORT
 
 const PREPROMPT_ASK_SUDOLANG = `
-# InternetBrowsingAssistant
+# Internet Browsing Assistant
 
 You are an internet browsing assistant. You an expert in answering user questions about webpages.
 Your job is to answer user questions about the webpage text content.
-The question is always the last line of the input.
+The question is always the last line of the prompt.
 
-function list():format=numbered markdown
-
-InternetBrowsingAssistant {
-  State {
-    Information {
-      Description
-    }
-  }
-  Constraints {
-    Use bullet points.
-    Use concise sentences.
-
-    Instruct the AI:
-    - Always respond in the initial webpage language. For example, if the webpage is in french, respond in french.
-    - Just answer the question. Do not add any additional information.
-    - If the question is not clear, ask for clarification.
-  }
-  /list - List current property settings
+Constraints {
+  - Use bullet points.
+  - Use concise sentences.
+  - Always respond in the question language. For example, if the question is in french, respond in french.
+  - Focus on answering the question. Do not add any additional information.
+  - If the question is unclear, ask for clarification.
 }
 `
 
-const PREPROMPT_SUMMARY = PREPROMPT_SUMMARY_SUDOLANG
-
-let appendToSummary = () => {
-  console.log("appendToSummary not initialized")
-}
-
 export const MAX_MESSAGE_LENGTH = 12000
+
+let setSummaryGlobal = () => {
+  console.log("setSummary not initialized")
+}
 
 export const useSummary = () => {
   const [summary, setSummary] = useState("")
 
-  // useEffect(() => {
-  //   sendRequest(prompt)
-  // }, [prompt])
-
-  useEffect(() => {
-    appendToSummary = (toAppend) => {
-      setSummary(summary + toAppend)
-    }
-  }, [summary])
+  setSummaryGlobal = setSummary
 
   return [summary, setSummary]
 }
@@ -136,7 +111,7 @@ export const fetchSummaryPart = async (
     apiKey,
     messages,
     setActionState,
-    (e) => appendToSummary(e),
+    (e) => setSummaryGlobal((v) => v + e),
     i,
     promptChunks.length,
   )
@@ -166,7 +141,7 @@ export const fetchAnswer = async (
     apiKey,
     messages,
     setActionState,
-    (e) => appendToSummary(e),
+    (e) => setSummaryGlobal((v) => v + e),
     1,
     1,
   )
@@ -231,7 +206,6 @@ export const fetchApiStream = async (
         const content = message.choices[0].delta.content
 
         if (message.choices[0].finish_reason === "stop") {
-          summarizeButtonTitle.innerHTML = "Summarize"
           appendData("\n")
           setActionState("")
           // Last message received, stop processing

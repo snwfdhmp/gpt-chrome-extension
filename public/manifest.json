@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Test extension",
+  "name": "GPT Web",
   "version": "1.0",
-  "description": "React chrome extension",
+  "description": "Use GPT on your current webpage content",
   "permissions": ["activeTab", "tabs", "storage", "*://*/*"],
   "browser_action": {
     "default_popup": "index.html"

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "prebuild": "rimraf dist",
-    "build-prod": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
+    "build-prod": "cross-env NODE_ENV=production webpack --config webpack.config.production.js && web-ext build -s dist/",
     "build": "cross-env NODE_ENV=development webpack --config webpack.config.js"
   },
   "dependencies": {
