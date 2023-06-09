@@ -20,7 +20,7 @@ Get the answer
 
 ## Getting started
 
-[Download the prebuilt unpacked extension](https://github.com/snwfdhmp/gpt-chrome-extension/releases/download/1.0.0/dist.zip) or build it yourself with `yarn build`.
+[Download the prebuilt unpacked extension](https://github.com/snwfdhmp/gpt-chrome-extension/releases) or build it yourself with `yarn build`.
 
 Then install the unpacked extension from `dist` folder in Chrome ([tutorial](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension)) or Firefox ([tutorial](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing)).
 
