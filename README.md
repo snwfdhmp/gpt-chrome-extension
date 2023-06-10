@@ -4,19 +4,15 @@
 
 Content parsed automatically (thanks to [Mozilla Readability library](https://github.com/mozilla/readability))
 
-<img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-1.png"  width="300">
+<img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-5.png"  width="300">
 
 Summarize
 
-<img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-2.png"  width="300">
+<img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-6.png"  width="300">
 
 Ask questions about content
 
-<img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-3.png"  width="300">
-
-Get the answer
-
-<img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-4.png"  width="300">
+<img src="https://raw.githubusercontent.com/snwfdhmp/gpt-chrome-extension/main/docs/screenshot-7.png"  width="300">
 
 ## Getting started
 
